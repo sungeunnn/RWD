@@ -500,7 +500,7 @@ input[type="search"] {
 }
 
 /* 데스크탑 디바이스 (Desktop Device) */
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   /* 데스크탑 헤더 */
   .appHeader {
     max-width: var(--container-width);
