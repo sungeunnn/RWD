@@ -8,9 +8,10 @@ body *::after {
   box-sizing: border-box;
 }
 
-[class] {
+/* [class] {
   margin: 0;
-}
+} 
+클래스가 있는경우 모두 적용된다 nomalize.css로 인해 모두 0으로 처리되어있기 때문에 해당 코드는 중복이다 */
 
 a {
   color: inherit;
@@ -27,8 +28,9 @@ body {
 }
 
 /* 유연한 미디어 */
+/* img에 max-width를 주는 이유는 svg파일이 아니기 때문에 이미지가 깨지는걸 방지하기 위함이다. */
 img {
-  max-width: 100%;
+  max-width: 100%; 
   height: auto;
 }
 
