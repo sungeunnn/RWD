@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.group1 .box {
+  background: orchid;
+}
+.group2 .box {
+  background: orange;
+}
+.group3 .box {
+  background: midnightblue;
+}
+.group4 .box {
+  background: blueviolet;
+}
+.group5 .box {
+  background: greenyellow;
+}
+.group6 .box {
+  background: gold;
+}
+.group7 .box {
+  background: lightseagreen;
+}
+.group8 .box {
+  background: aquamarine;
+}
+.group9 .box {
+  background: skyblue;
+}
+.group10 .box {
+  background: seagreen;
+}
+.group11 .box {
+  background: sandybrown;
+}
+.group12 .box {
+  background: salmon;
+}
+
+.container {
+  background: silver;
+  border: 1px solid red;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+/* 모든 디바이스 */
+/* class^가 group으로 시작하는것  */
+/* class$ = group으로 끝나는 것 */
+/* class * = group이 포함되는 것 */
+div[class*="group"] {
+  width: 100%;
+  margin: 0;
+  border: 1px solid black;
+}
+.box {
+  height: 150px;
+  margin: 0 24px;
+}
+/* 768부터 */
+@media (min-width: 768px) {
+  div[class*="group"] {
+    width: 50%;
+  }
+  div.group1,
+  div.group3 {
+    width: 100%;
+  }
+}
+
+/* 1280부터 */
+@media (min-width: 1280px) {
+  div[class*="group"] {
+    width: 25%;
+    height: 200px;
+  }
+
+  div.group2 {
+    order: 1;
+  }
+  div.group1,
+  div.group12 {
+    width: 75%;
+  }
+}
