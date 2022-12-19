@@ -104,22 +104,27 @@ input[type="search"] {
 /* 공통 추천 서적 */
 .book {
   background: lightgreen;
+  grid-area: book;
 }
 /* 공통 새소식 */
 .news {
   background: yellowgreen;
+  grid-area: news;
 }
 /* 공통 게시판 */
 .board{
   background: lightsalmon;
+  grid-area: board;
 }
 /* 공통 인기사이트 */
 .favorite {
   background: aquamarine;
+  grid-area: favorite;
 }
 /* 공통 트위터 */
 .twitter{
   background: orange;
+  grid-area: twitter;
 }
 
 
@@ -292,8 +297,15 @@ input[type="search"] {
 
   /* 데스크탑 메인 컨텐츠 */
   .appMain{
+    max-width: var(--container-width);
+    margin-left: auto;
+    margin-right: auto;
     grid-template-rows: auto;
     grid-template-columns: repeat(12, 1fr);
+    grid-template-areas:
+      "news news news news news news news news news news news news"
+      "book book book book twitter twitter twitter twitter twitter favorite favorite favorite"
+      "book book book book . board board board board board board board";
   }
 
   /* 데스크탑 추천 서적 */
