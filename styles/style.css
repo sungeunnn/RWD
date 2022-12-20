@@ -254,10 +254,38 @@ input[type="search"] {
   /* background: aquamarine; */
   grid-area: favorite;
 }
+
 /* 공통 트위터 */
 .twitter {
-  /* background: orange; */
   grid-area: twitter;
+}
+
+.twitter__userInfo {
+  display: inline-flex;
+  gap: var(--spacing-xs);
+}
+
+.twitter__userProfile {
+  width:25%;
+  min-width: 3.125rem;
+  max-width: 5.625rem;
+  aspect-ratio: 1/1;
+  float: right;
+  margin-left: var(--spacing-xs);
+  shape-outside: circle(50%);
+}
+.twitter__userProfileImage {
+  border: 1px solid var(--primary-color);
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 30% 40%;
+  width: 100%;
+  height: 100%;
+}
+
+.twitter__date {
+  display: block;
+  margin-top: var(--spacing-sm);
 }
 
 /* 모바일 디바이스 (Mobile Device) */
@@ -375,11 +403,11 @@ input[type="search"] {
   }
 
   /* 모바일 인기 사이트 */
-  .favorite__item{
+  .favorite__item {
     margin-top: var(--spacing-sm);
   }
 
-  .favorite__link::after{
+  .favorite__link::after {
     content: attr(data-tooltip);
     color: var(--accent-favorite);
     font-size: var(--text-sm);
@@ -455,6 +483,7 @@ input[type="search"] {
       "book book book book twitter twitter twitter twitter twitter favorite favorite favorite"
       "book book book book . board board board board board board board";
   }
+
 }
 
 /* 고해상도 배경이미지 미디어쿼리 */
