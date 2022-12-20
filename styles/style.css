@@ -166,6 +166,18 @@ input[type="search"] {
   /* background: lightgreen; */
   grid-area: book;
 }
+
+.book__cover{
+  width:80%;
+  margin-left:auto;
+  margin-right:auto;
+  background: lime;
+  text-align: center;
+}
+
+.book__coverCaption{
+  margin-top: var(--spacing-sm);
+}
 /* 공통 새소식 */
 .news {
   /* background: yellowgreen; */
