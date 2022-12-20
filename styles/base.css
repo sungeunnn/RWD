@@ -30,11 +30,38 @@ body {
 /* 유연한 미디어 */
 /* img에 max-width를 주는 이유는 svg파일이 아니기 때문에 이미지가 깨지는걸 방지하기 위함이다. */
 img {
-  max-width: 100%; 
+  max-width: 100%;
   height: auto;
 }
 
 video {
   width: 100%;
   height: auto;
+}
+
+/* 반응형 Iframe */
+.iframeWrapper {
+  position:relative;
+  max-width:100%;
+  height:0;
+}
+
+.iframeRatio-16-9 {
+  padding-top: 56.25%;
+}
+.iframeRatio-21-9 {
+  padding-top: 42.857142857142855%;
+}
+.iframeRatio-4-3 {
+  padding-top: 75%;
+}
+
+
+
+.iframeWrapper iframe {
+  position: absolute;
+  width: 100%;
+  height:100%;
+  top:0;
+  left:0;
 }
