@@ -288,6 +288,32 @@ input[type="search"] {
   margin-top: var(--spacing-sm);
 }
 
+/* 공통 푸터 */
+.appFooter{
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: var(--spacing-lg);
+  font-size: var(--text-base);
+}
+
+/* 공통 주소 */
+.address{
+  margin: var(--spacing-base) 0 ;
+  display:flex;
+  flex-flow: row wrap;
+}
+
+.address span{
+  margin-right: var(--spacing-xs);
+}
+
+/* 공통 저작권 */
+.copyright{
+  display:block;
+  margin: var(--spacing-base) 0 ;
+}
+
+
 /* 모바일 디바이스 (Mobile Device) */
 @media (min-width: 320px) and (max-width: 640px) {
 
@@ -526,6 +552,14 @@ input[type="search"] {
       "news news news news news news news news news news news news"
       "book book book book twitter twitter twitter twitter twitter favorite favorite favorite"
       "book book book book . board board board board board board board";
+  }
+
+  /* 데스크탑 푸터 */
+  .appFooter{
+    text-align: center;
+  }
+  .address{
+    justify-content: center;
   }
 
 }
